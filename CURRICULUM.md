@@ -27,6 +27,30 @@ Default pace: ~10 hrs/week, ~12 weeks. Adjust freely.
 
 ---
 
+## Karpathy "Zero to Hero" — Which Videos, In What Order
+
+The playlist (https://karpathy.ai/zero-to-hero.html) has 9 videos (~18h).
+You do **not** need to watch them all. Follow this order:
+
+| # | Video | Length | Roadmap | Must-watch? |
+|---|-------|--------|---------|-------------|
+| 1 | The spelled-out intro to neural networks and backpropagation: **building micrograd** | ~2h25 | Phase 1 · Micrograd + Backprop | ✅ Yes |
+| 2 | The spelled-out intro to language modeling: **building makemore** | ~2h | Phase 1 · Embedding (foundation) | ✅ Yes |
+| 3 | Building makemore **Part 2: MLP** | ~1h15 | Phase 1 · Embedding | ✅ Yes |
+| 4 | Building makemore Part 3: Activations & Gradients, BatchNorm | ~1h55 | (training tricks) | ⚪ Skippable |
+| 5 | Building makemore **Part 4: Backprop Ninja** | ~1h55 | Phase 1 · Backpropagation | 🔸 Recommended |
+| 6 | Building makemore Part 5: WaveNet | ~56m | — | ⚪ Skippable |
+| 7 | **Let's build GPT: from scratch, in code, spelled out** | ~2h | Phase 2 · all (Attention) | ✅ Yes |
+| 8 | **Let's build the GPT Tokenizer** | ~2h13 | Phase 3 · Tokenization | ✅ Yes |
+| 9 | Let's reproduce GPT-2 (124M) | ~4h | Phase 2/3 stretch | 🔸 Optional |
+
+**Minimal path:** #1 → #2 → #3 → #7 gets you through the main line (write your own
+micrograd, a char-level LM, then a GPT from scratch). Come back for #8 at Phase 3.
+
+While watching, type the code yourself (repos at github.com/karpathy) and save it in `code/`.
+
+---
+
 ## Phase 1: Neural Networks
 **Course:** Andrej Karpathy — *Neural Networks: Zero to Hero*
 (playlist: https://karpathy.ai/zero-to-hero.html)
