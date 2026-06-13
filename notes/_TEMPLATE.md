@@ -1,6 +1,6 @@
-# <主题>
+# <Topic>
 
-> 日期：YYYY-MM-DD
+> Date: YYYY-MM-DD
 
 ## What I Learned
 

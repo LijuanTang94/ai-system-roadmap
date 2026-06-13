@@ -10,7 +10,7 @@ venv/
 .vscode/
 .idea/
 
-# 大文件别提交：论文 PDF、模型权重、数据集
+# Don't commit large files: paper PDFs, model weights, datasets
 papers/*.pdf
 *.pt
 *.bin

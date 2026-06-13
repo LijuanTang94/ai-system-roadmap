@@ -1,6 +1,6 @@
 # Progress
 
-每周记一次。模板在最下面，复制到顶部填写即可。
+Log once a week. The template is at the bottom — copy it to the top and fill it in.
 
 ---
 
@@ -18,7 +18,7 @@
 ---
 
 <!--
-模板：
+Template:
 
 ## Week N (YYYY-MM-DD ~ )
 
