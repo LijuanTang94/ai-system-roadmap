@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# 大文件别提交：论文 PDF、模型权重、数据集
+papers/*.pdf
+*.pt
+*.bin
+*.safetensors
+data/
