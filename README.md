@@ -3,6 +3,8 @@
 My learning journey from neural network fundamentals to large language model inference systems.
 Check off `[ ]` → `[x]` as I finish each item — GitHub renders the progress automatically.
 
+📚 **What to study & with which materials → [CURRICULUM.md](CURRICULUM.md)**
+
 ## Repository Structure
 
 | Directory | What goes here |
