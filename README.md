@@ -18,7 +18,7 @@ Check off `[ ]` → `[x]` as I finish each item — GitHub renders the progress 
 ---
 
 ## Phase 1: Neural Networks
-- [ ] Micrograd
+- [x] Micrograd
 - [ ] Backpropagation
 - [ ] Embedding
 
