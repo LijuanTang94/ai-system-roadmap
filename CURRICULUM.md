@@ -51,6 +51,55 @@ While watching, type the code yourself (repos at github.com/karpathy) and save i
 
 ---
 
+## How to Watch — Checkpoint Breakdowns
+
+A 2-hour video is **not** meant to be watched start-to-finish. Break each one into
+"checkpoints" — points where the code actually runs. Do **one checkpoint per sitting**:
+
+> **Per-checkpoint loop:**
+> 1. Watch the segment once at 1.25–1.5×, no typing — just get *what he's doing*.
+> 2. Close the video. Rebuild it from memory; only rewind when you're stuck.
+> 3. Run it, compare to his result. ✅ Check the box, move on.
+>
+> Stuck >20 min? Leave a `# TODO:` note, skip ahead, come back later.
+> **Completion > perfection.**
+
+### #1 — Building micrograd (~2h25) ✅ *done*
+1. `Value`: data + `+`/`*`, building the expression graph
+2. Manual backprop through the graph, by hand
+3. `backward()` via topological sort + chain rule
+4. `tanh`/more ops → `Neuron` / `Layer` / `MLP`
+5. Training loop: forward → loss → `zero_grad` → backward → step
+
+### #2 — makemore intro / bigram (~2h)
+1. Load `names.txt`, build a 27×27 bigram **count** matrix
+2. Sample from the counts; evaluate with negative log-likelihood
+3. Reframe as a neural net: one-hot → single linear layer → softmax
+4. Train by gradient descent; add regularization; check it matches the counts
+
+### #3 — makemore Part 2: MLP (~1h15)
+1. Build the dataset: context window (block size) → next char
+2. Embedding table + hidden layer (the Bengio 2003 MLP)
+3. Minibatch training loop; the learning-rate finder
+4. Train/dev/test split; tune; sample new names
+
+### #7 — Let's build GPT (~2h)
+1. Data: tiny-shakespeare, char tokenizer, batching
+2. Bigram baseline model + training loop (warm-up)
+3. **The math trick** of self-attention (averaging via `tril` / matmul)
+4. A single self-attention head (q, k, v, scaled dot-product, masking)
+5. Multi-head attention + feed-forward
+6. Blocks: residual connections + LayerNorm
+7. Scale up + dropout → the full GPT
+
+### #8 — Let's build the GPT Tokenizer (~2h13)
+1. Unicode → UTF-8 bytes (why tokenization exists at all)
+2. BPE core: count pairs → merge most frequent → grow the vocab
+3. `encode` / `decode`
+4. Regex splitting (the GPT-2 pattern) + special tokens
+
+---
+
 ## Phase 1: Neural Networks
 **Course:** Andrej Karpathy — *Neural Networks: Zero to Hero*
 (playlist: https://karpathy.ai/zero-to-hero.html)
